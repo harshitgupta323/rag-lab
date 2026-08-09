@@ -1,0 +1,135 @@
+rag-lab/
+│
+├── README.md
+├── LICENSE
+├── .gitignore
+├── .env.example
+├── requirements.txt
+├── pyproject.toml
+│
+├── app/
+│   ├── streamlit_app.py
+│   │
+│   ├── pages/
+│   │   ├── 01_RAG_Explorer.py
+│   │   ├── 02_RAG_Comparison.py
+│   │   ├── 03_Embedding_Comparison.py
+│   │   ├── 04_VectorDB_Comparison.py
+│   │   ├── 05_LLM_Comparison.py
+│   │   ├── 06_RAG_Evaluation.py
+│   │   └── 07_Experiment_Tracking.py
+│   │
+│   ├── components/
+│   │   ├── sidebar.py
+│   │   ├── query_interface.py
+│   │   ├── result_viewer.py
+│   │   ├── metrics.py
+│   │   ├── comparison_table.py
+│   │   └── charts.py
+│   │
+│   └── utils/
+│       ├── session_state.py
+│       └── formatting.py
+│
+├── 01_foundational_rag/
+│   ├── naive_rag/
+│   ├── semantic_rag/
+│   └── parent_document_rag/
+│
+├── 02_retrieval_strategies/
+│   ├── hybrid_rag/
+│   ├── multi_query_rag/
+│   ├── contextual_rag/
+│   ├── metadata_filtering/
+│   └── reranking/
+│
+├── 03_advanced_rag/
+│   ├── corrective_rag/
+│   ├── self_rag/
+│   ├── adaptive_rag/
+│   ├── agentic_rag/
+│   └── graph_rag/
+│
+├── 04_multimodal_rag/
+│   ├── pdf_rag/
+│   ├── image_rag/
+│   └── multimodal_rag/
+│
+├── 05_embeddings/
+│   ├── bge/
+│   ├── e5/
+│   ├── jina/
+│   └── benchmark_embeddings.py
+│
+├── 06_vector_databases/
+│   ├── chroma/
+│   ├── faiss/
+│   ├── qdrant/
+│   ├── pgvector/
+│   ├── milvus/
+│   ├── weaviate/
+│   └── benchmark_vector_dbs.py
+│
+├── 07_llms/
+│   ├── groq/
+│   ├── ollama/
+│   ├── gemini/
+│   ├── huggingface/
+│   └── benchmark_llms.py
+│
+├── 08_evaluation/
+│   ├── ragas/
+│   ├── retrieval_metrics/
+│   └── answer_metrics/
+│
+├── 09_experiment_tracking/
+│   └── mlflow/
+│
+├── 10_observability/
+│   └── langsmith/
+│
+├── benchmarks/
+│   ├── datasets/
+│   ├── results/
+│   ├── benchmark_rag.py
+│   ├── benchmark_embeddings.py
+│   ├── benchmark_vector_db.py
+│   └── benchmark_llm.py
+│
+├── shared/
+│   ├── embeddings/
+│   ├── vectorstores/
+│   ├── retrievers/
+│   ├── rerankers/
+│   ├── llms/
+│   ├── chunking/
+│   ├── loaders/
+│   └── utils/
+│
+├── configs/
+│   ├── default.yaml
+│   ├── embeddings.yaml
+│   ├── vectorstores.yaml
+│   ├── llms.yaml
+│   └── experiments.yaml
+│
+├── notebooks/
+│   ├── 01_rag_basics.ipynb
+│   ├── 02_embedding_comparison.ipynb
+│   ├── 03_vector_db_comparison.ipynb
+│   ├── 04_reranker_comparison.ipynb
+│   ├── 05_llm_comparison.ipynb
+│   └── 06_rag_evaluation.ipynb
+│
+├── scripts/
+│   ├── ingest_data.py
+│   ├── run_rag.py
+│   ├── evaluate.py
+│   └── run_benchmark.py
+│
+└── tests/
+    ├── test_embeddings.py
+    ├── test_retrievers.py
+    ├── test_vectorstores.py
+    ├── test_rerankers.py
+    └── test_llms.py
