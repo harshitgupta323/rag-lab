@@ -36,11 +36,9 @@ def main():
         "Starting Naive RAG application"
     )
 
-    print("=" * 60)
-    print(
-        "              RAG LAB - NAIVE RAG"
-    )
-    print("=" * 60)
+    print("=" * 120)
+    print("              RAG LAB - NAIVE RAG")
+    print("=" * 120)
 
     try:
 
@@ -48,14 +46,8 @@ def main():
 
     except Exception:
 
-        logger.exception(
-            "Application initialization failed"
-        )
-
-        print(
-            "\nFailed to initialize RAG system."
-        )
-
+        logger.exception("Application initialization failed")
+        print("\nFailed to initialize RAG system.")
         return
 
     while True:
@@ -96,7 +88,7 @@ def main():
             )
 
             print(
-                "\n" + "=" * 60
+                "\n" + "=" * 120
             )
 
             print(
@@ -104,7 +96,7 @@ def main():
             )
 
             print(
-                "=" * 60
+                "=" * 120
             )
 
             print(
@@ -112,7 +104,7 @@ def main():
             )
 
             print(
-                "\n" + "=" * 60
+                "\n" + "=" * 120
             )
 
             print(
@@ -120,7 +112,7 @@ def main():
             )
 
             print(
-                "=" * 60
+                "=" * 120
             )
 
             for index, document in enumerate(

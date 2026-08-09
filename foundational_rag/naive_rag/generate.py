@@ -99,28 +99,28 @@ def generate_answer(
     )
 
     prompt = f"""
-You are a helpful question-answering assistant.
+    You are a helpful question-answering assistant.
 
-Answer the user's question using ONLY
-the provided context.
+    Answer the user's question using ONLY
+    the provided context.
 
-If the answer cannot be found in the
-context, say:
+    If the answer cannot be found in the
+    context, say:
 
-"I don't know based on the provided documents."
+    "I don't know based on the provided documents."
 
-Do not invent information.
+    Do not invent information.
 
-Context:
-----------------
-{context}
-----------------
+    Context:
+    ----------------
+    {context}
+    ----------------
 
-Question:
-{query}
+    Question:
+    {query}
 
-Answer:
-"""
+    Answer:
+    """
 
     try:
 
