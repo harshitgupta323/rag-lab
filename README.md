@@ -42,8 +42,8 @@ RAG-Lab goes beyond this baseline:
              ▼                      ▼                      ▼
         RAG Architectures      RAG Components          Evaluation
              │                      │                      │
-      ┌──────┼──────┐        ┌──────┼──────┐       ┌──────┼──────┐
-      │      │      │        │      │      │       │      │      │
+      ┌──────┼──────┐        ┌──────┼──────┐       ┌───────┼──────┐
+      │      │      │        │      │      │       │       │      │
    Basic  Advanced Specialized Embeddings DBs  Rerankers RAGAS  Metrics
              │                      │                      │
              └──────────────────────┼──────────────────────┘
@@ -185,8 +185,8 @@ This repository demonstrates practical experience with:
                   ▼                 ▼                 ▼
              Query Layer       Retrieval Layer    Generation
                   │                 │                 │
-          ┌───────┼───────┐   ┌────┼────┐            │
-          │       │       │   │         │             │
+          ┌───────┼───────┐   ┌──── ┼────┐            │
+          │       │       │   │          │            │
        Original Multi   Expansion Dense   Sparse      LLM
        Query    Query      │     │       │
                            │     └───┬───┘
@@ -217,8 +217,8 @@ This repository demonstrates practical experience with:
 
 # 📚 RAG Architecture Comparison
 
-| RAG Architecture       | Main Technique         | Primary Benefit              | Complexity | Status |
-| ---------------------- | ---------------------- | ---------------------------- | ---------- | ------ |
+| RAG Architecture       | Main Technique         | Primary Benefit              | Complexity | Status  |
+| ---------------------- | ---------------------- | ---------------------------- | ---------- | ------- |
 | Naive RAG              | Dense retrieval        | Baseline RAG                 | 🟢 Low     | 🟢     |
 | Semantic RAG           | Semantic chunking      | Better document segmentation | 🟢 Low     | 🟢     |
 | Parent Document RAG    | Parent-child retrieval | Better context               | 🟡 Medium  | 🟢     |
@@ -676,25 +676,25 @@ Example:
 │                  RAG-Lab                     │
 ├──────────────────────────────────────────────┤
 │                                              │
-│ RAG Architecture                            │
+│ RAG Architecture                             │
 │ [ Hybrid RAG                         ▼ ]     │
 │                                              │
-│ Embedding Model                             │
-│ [ BGE-small                         ▼ ]     │
+│ Embedding Model                              │
+│ [ BGE-small                         ▼ ]      │
 │                                              │
-│ Vector Database                             │
-│ [ Chroma                            ▼ ]     │
+│ Vector Database                              │
+│ [ Chroma                            ▼ ]      │
 │                                              │
-│ Reranker                                    │
-│ [ BGE Reranker                      ▼ ]     │
+│ Reranker                                     │
+│ [ BGE Reranker                      ▼ ]      │
 │                                              │
-│ LLM                                         │
-│ [ Llama                             ▼ ]     │
+│ LLM                                          │
+│ [ Llama                             ▼ ]      │
 │                                              │
-│ Top-K                                       │
+│ Top-K                                        │
 │ [ 5 ]                                        │
 │                                              │
-│ Query                                       │
+│ Query                                        │
 │ ┌──────────────────────────────────────────┐ │
 │ │ What is the company's leave policy?      │ │
 │ └──────────────────────────────────────────┘ │
@@ -746,7 +746,7 @@ The final experimentation framework is intended to support comparisons across mu
           │        ┌─────┼─────┐        │
           │        │     │     │        │
           │   Embeddings DB  Reranker   LLM
-          │
+          │                             │
           └──────────────┬──────────────┘
                          │
                          ▼
@@ -883,8 +883,8 @@ rag-lab/
 ### Phase 2 — Retrieval
 
 * [x] Hybrid RAG
-* [x] Multi-Query RAG
-* [x] Query Expansion RAG
+* [ ] Multi-Query RAG
+* [ ] Query Expansion RAG
 * [ ] Reranking RAG
 * [ ] Contextual Compression RAG
 
@@ -1232,7 +1232,7 @@ Potential future additions include:
 
 **Harshit Gupta**
 
-Machine Learning Engineer | Generative AI | Agentic AI | MLOps
+Senior Machine Learning Engineer | Generative AI | Agentic AI | MLOps
 
 ---
 
