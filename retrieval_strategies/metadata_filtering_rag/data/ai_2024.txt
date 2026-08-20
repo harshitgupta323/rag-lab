@@ -1,0 +1,5 @@
+Artificial intelligence is a field of computer science focused on building systems capable of performing tasks that normally require human intelligence.
+
+Modern AI systems use machine learning, deep learning, natural language processing, computer vision, and generative models.
+
+Large language models are neural networks trained on large collections of text. They can perform tasks such as text generation, summarization, translation, and question answering.

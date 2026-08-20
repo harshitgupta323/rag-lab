@@ -1,0 +1,5 @@
+Machine learning enables systems to learn patterns from data and make predictions.
+
+Common machine learning algorithms include linear regression, logistic regression, decision trees, random forests, gradient boosting, support vector machines, and neural networks.
+
+ML systems commonly use feature engineering, model validation, hyperparameter tuning, and monitoring.

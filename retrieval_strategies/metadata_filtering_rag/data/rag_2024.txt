@@ -1,0 +1,7 @@
+Retrieval-Augmented Generation combines information retrieval with language generation.
+
+A RAG system retrieves relevant information from an external knowledge source and provides the retrieved information to a language model as context.
+
+Vector databases are commonly used to store document embeddings and perform similarity search.
+
+Metadata filtering can restrict retrieval to documents matching attributes such as category, date, author, department, or access level.

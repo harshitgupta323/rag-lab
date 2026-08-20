@@ -1,0 +1,5 @@
+Advanced RAG systems can combine semantic retrieval with metadata filtering, reranking, query expansion, contextual compression, and evaluation.
+
+Metadata filtering is particularly useful when a knowledge base contains documents from multiple departments, years, products, or organizations.
+
+Filtering before semantic retrieval reduces the candidate search space and can improve retrieval precision.
