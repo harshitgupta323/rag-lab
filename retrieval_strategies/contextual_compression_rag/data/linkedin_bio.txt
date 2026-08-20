@@ -1,0 +1,20 @@
+Harshit Gupta a Senior Machine Learning Engineer with 6+ years of experience building production-scale AI, machine learning, and data engineering systems. Over the years, I've worked across traditional machine learning, distributed data processing, computer vision, NLP, and cloud-native AI solutions, and my current focus is on Generative AI and Agentic AI.
+
+At Warner Bros. Discovery, I architect and develop enterprise AI solutions using LangGraph, AWS Bedrock, Claude, Titan Embeddings, and Retrieval-Augmented Generation (RAG). My work includes designing document intelligence platforms, multimodal retrieval systems, semantic search pipelines, and agentic workflows that automate complex business processes and save thousands of hours of manual effort.
+
+Previously, I worked at Micron Technology, where I built multimodal semantic search and RAG systems, scalable machine learning pipelines, and production-grade inference services. Earlier in my career, I gained strong foundations in big data engineering, distributed computing, and cloud platforms by working with technologies such as Spark, Hadoop, Airflow, Azure, AWS, and GCP.
+
+My technical interests include:
+• Generative AI & Agentic AI
+• Large Language Models (LLMs)
+• Multi-Agent Systems
+• Retrieval-Augmented Generation (RAG)
+• Multimodal AI
+• Machine Learning Systems Design
+• MLOps & LLMOps
+• Distributed AI Infrastructure
+• AI Research
+
+Outside of work, I enjoy exploring emerging AI technologies, building end-to-end AI applications, studying machine learning system design, and sharing my learnings through technical articles and hands-on projects. I'm particularly interested in the intersection of foundation models, autonomous AI agents, multimodal reasoning, and scalable production AI systems.
+
+I'm always open to connecting with engineers, researchers, and AI practitioners to discuss machine learning, Generative AI, Agentic AI, and the future of intelligent systems.

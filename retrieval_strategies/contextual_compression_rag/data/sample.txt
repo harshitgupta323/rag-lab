@@ -1,0 +1,23 @@
+Retrieval-Augmented Generation combines information retrieval with language generation. A RAG system retrieves relevant information from an external knowledge source and provides that information to a language model as context.
+
+Vector databases store document embeddings and allow efficient similarity search. Embedding models convert documents and queries into high-dimensional vectors.
+
+Contextual compression is a retrieval optimization technique that reduces irrelevant information before it is passed to the language model.
+
+A contextual compression system first retrieves candidate documents using a normal retriever. These documents can contain useful information as well as irrelevant information.
+
+The compression stage analyzes the retrieved documents in the context of the user's query and extracts only the information that is relevant to the question.
+
+For example, a retrieved document may contain ten paragraphs while only two paragraphs are relevant to the user's question. Contextual compression attempts to retain those relevant paragraphs and remove the unnecessary information.
+
+Contextual compression is different from reranking. Reranking changes the order of retrieved documents based on their relevance. Contextual compression can reduce the actual content contained within those documents.
+
+Reducing irrelevant context can decrease the number of tokens sent to the language model. This can potentially reduce latency and inference costs.
+
+LLM-based contextual compression uses a language model to identify relevant information from retrieved documents. Embedding-based filtering can also be used to remove information that has low semantic similarity to the query.
+
+The main disadvantage of LLM-based contextual compression is the additional inference required during retrieval. Therefore, a production system should evaluate whether the improvement in context quality justifies the additional latency and cost.
+
+Contextual compression can be combined with semantic retrieval, hybrid retrieval, reranking, and other retrieval strategies.
+
+RAG systems can be evaluated using metrics such as context precision, context recall, faithfulness, and answer relevancy.
