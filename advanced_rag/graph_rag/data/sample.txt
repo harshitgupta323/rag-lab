@@ -1,0 +1,21 @@
+Retrieval-Augmented Generation combines information retrieval with language generation. A RAG system retrieves relevant information from an external knowledge source and provides that information to a language model as context.
+
+Corrective RAG, also known as CRAG, improves a RAG system by evaluating the quality of retrieved documents before generating the final answer.
+
+The retrieval evaluator determines whether the retrieved documents are relevant to the user's question. If the retrieval is considered correct, the system can proceed with generation.
+
+If the retrieved information is considered incorrect, a corrective RAG system can perform additional retrieval or use another knowledge source to obtain better information.
+
+If retrieval is ambiguous, the system can perform additional processing before generating the answer.
+
+The goal of Corrective RAG is to prevent a language model from blindly trusting poor retrieval results.
+
+Traditional RAG generally follows a retrieve-then-generate workflow. Corrective RAG introduces an evaluation step between retrieval and generation.
+
+RAG evaluation can measure retrieval quality using metrics such as context precision and context recall.
+
+Embedding models transform documents and queries into numerical vectors. Vector databases can efficiently search these vectors using similarity measures.
+
+Reranking can improve retrieval quality by scoring retrieved documents with a more powerful relevance model.
+
+Metadata filtering can restrict retrieval based on attributes such as document category, date, department, or source.
