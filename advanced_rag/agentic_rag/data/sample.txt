@@ -1,0 +1,37 @@
+Retrieval-Augmented Generation combines information retrieval with language generation. A RAG system retrieves relevant information from an external knowledge source and provides that information to a language model as context.
+
+Agentic RAG extends traditional RAG by allowing an agent to dynamically decide which actions should be taken during the retrieval and generation process.
+
+Instead of following a fixed retrieve-then-generate pipeline, an Agentic RAG system can reason about whether it needs additional information, refine its search query, perform another retrieval operation, and then generate an answer.
+
+An agent can use tools to interact with external systems. In an Agentic RAG system, a vector database can be exposed as a retrieval tool.
+
+The agent can decide to retrieve information when the user asks a knowledge-intensive question.
+
+If the first retrieval does not provide sufficient information, the agent can refine the search query and perform another retrieval operation.
+
+The agent can stop retrieving when it determines that sufficient information has been collected.
+
+Agentic RAG therefore introduces a decision-making loop around retrieval and generation.
+
+Traditional RAG follows a mostly fixed workflow: query, retrieval, context construction, and generation.
+
+Adaptive RAG can select a retrieval strategy based on query characteristics.
+
+Corrective RAG evaluates retrieved documents and performs corrective actions when retrieval quality is poor.
+
+Self-RAG evaluates retrieved context and generated answers through self-reflection.
+
+Agentic RAG focuses on autonomous decision-making and tool usage during the RAG process.
+
+Vector databases store document embeddings and support similarity search.
+
+Embedding models transform text into numerical vector representations.
+
+Reranking can reorder retrieved documents according to their relevance to a query.
+
+Multi-query retrieval generates multiple search queries to improve recall.
+
+Graph RAG uses entities and relationships represented as a graph to retrieve relevant information.
+
+RAG systems can be evaluated using retrieval metrics, answer quality metrics, context precision, context recall, and faithfulness.
