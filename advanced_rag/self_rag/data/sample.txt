@@ -1,0 +1,29 @@
+Retrieval-Augmented Generation combines information retrieval with language generation. A RAG system retrieves relevant information from an external knowledge source and provides that information to a language model as context.
+
+Self-RAG is a retrieval-augmented generation approach in which the language model evaluates its own retrieval and generation process.
+
+A Self-RAG system can determine whether external information is required for a question and can evaluate whether retrieved information is relevant.
+
+After retrieving information, the system can evaluate whether the retrieved context is useful for answering the question.
+
+The system can also evaluate whether its generated answer is supported by the retrieved context.
+
+The goal of Self-RAG is to improve factuality and reduce unsupported answers by introducing self-reflection into the generation process.
+
+Traditional RAG generally retrieves documents and immediately passes them to a language model. Self-RAG adds evaluation and reflection steps around retrieval and generation.
+
+Self-RAG can use retrieval when external knowledge is necessary and avoid relying on retrieved information when it is unnecessary.
+
+The retrieval stage of a RAG system commonly uses embedding models and vector databases.
+
+Embedding models transform text into numerical vectors. Vector databases store these vectors and perform similarity search.
+
+Reranking can be used after initial retrieval to improve the ordering of candidate documents.
+
+Contextual compression can reduce irrelevant information from retrieved documents before they are passed to the language model.
+
+Corrective RAG evaluates retrieved information and can take corrective action when retrieval quality is poor.
+
+RAG systems can be evaluated using retrieval metrics, answer quality metrics, context precision, context recall, and faithfulness.
+
+Large language models can generate answers from retrieved context, but they may produce unsupported information when the context is incomplete or irrelevant.
