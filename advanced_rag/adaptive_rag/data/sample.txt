@@ -1,0 +1,29 @@
+Retrieval-Augmented Generation combines information retrieval with language generation. A RAG system retrieves relevant information from an external knowledge source and provides that information to a language model as context.
+
+Adaptive RAG dynamically determines whether retrieval is necessary for a given query and can select different retrieval strategies depending on the complexity of the question.
+
+A simple question may not require retrieval and can be answered directly by the language model.
+
+A knowledge-intensive question can be routed through a retrieval pipeline so that the language model receives information from an external knowledge source.
+
+Complex questions may require retrieving more documents or using a more sophisticated retrieval strategy.
+
+Adaptive RAG therefore differs from traditional RAG because retrieval is not always performed in exactly the same way.
+
+The routing decision can be based on query complexity, information requirements, confidence, or other characteristics of the query.
+
+Embedding models transform documents and queries into numerical vectors. Vector databases store document vectors and perform similarity search.
+
+Hybrid retrieval combines semantic search with lexical search and can improve retrieval for queries containing important keywords.
+
+Reranking can reorder retrieved documents according to their relevance to the query.
+
+Corrective RAG evaluates retrieved information and performs corrective actions when retrieval quality is poor.
+
+Self-RAG evaluates retrieved context and generated answers to improve factuality and reduce unsupported responses.
+
+Graph RAG uses graph structures to retrieve information about entities and relationships.
+
+RAG evaluation can use context precision, context recall, faithfulness, answer relevance, and other metrics.
+
+Large language models can answer general questions without retrieval, but external retrieval is useful when the question depends on a specific knowledge base.
